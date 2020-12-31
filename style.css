@@ -165,7 +165,7 @@ body{
 
 .loading .bar {
     position: relative;
-    width: 400px;
+    width: 30%;
     height: 40px;
     background: transparent;
     margin: 0 20px;
