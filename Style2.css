@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.navBar__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 80px;
+    transition: .5s;
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.navBar__container.active {
+    background: rgb(74, 122, 252);
+    height: 250px;
+    width: 100%;
+}
+
+.navBar__container .toggle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+    padding: 0 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navBar__container .toggle::before {
+    
+    margin-right: 20px;
+}
+
+.navBar__container .toggle.active::before {
+    
+    margin-right: 20px;
+}
+
+.navBar__container .toggle.active span::before {
+    transform: rotate(225deg);
+    top: 24px;
+}
+
+.navBar__container .toggle.active span::after {
+    transform: rotate(135deg);
+    bottom: 24px;
+}
+
+.navBar__container .toggle span {
+    position: relative;
+    width: 20px;
+    height: 50px;
+}
+
+.navBar__container .toggle span::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+}
+
+.navBar__container .toggle span::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+}
+
+.navBar__container ul {
+    position: relative;
+    background: #444;
+}
+
+.navBar__container ul li {
+    list-style: none;
+}
+
+.navBar__container ul li a {
+    position: relative;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.2em;
+    transition: 1s;
+}
+
+.navBar__container ul li a:hover {
+    transition: 0s;
+    background: rgba(74, 122, 252, 0.767);
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: coral;
+}
+#service {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 80, 80);
+}
+#about {
+    width: 100%;
+    height: 100vh;
+    background: rgb(179, 255, 80);
+}
+#contact {
+    width: 100%;
+    height: 100vh;
+    background: rgb(106, 80, 255);
+}
