@@ -159,6 +159,7 @@
 
 .input__style::placeholder {
     color: white;
+    opacity: 1;
 }
 
 .form-container textarea:focus {
