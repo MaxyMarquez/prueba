@@ -103,22 +103,65 @@
 }
 
 #home {
+    
     width: 100%;
     height: 100vh;
-    background: coral;
+    background: orange;
 }
 #service {
+    
     width: 100%;
     height: 100vh;
-    background: rgb(255, 80, 80);
+    background: orangered;
 }
 #about {
+    
     width: 100%;
     height: 100vh;
-    background: rgb(179, 255, 80);
+    background: rgb(255, 185, 80) fixed;
 }
 #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
-    background: rgb(106, 80, 255);
+    background: rgb(106, 80, 255) fixed;
 }
+
+
+
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.input__style {
+    position: relative;
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin-top: 25px;
+    outline: none;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 1px solid rgba(148, 148, 148, 0.61);
+    background: none;
+    resize: none;
+    transition: .5s;
+}
+
+.form-container textarea:focus {
+    height: 200px;  
+}
+
+.input__style:focus {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
