@@ -18,7 +18,7 @@
 }
 
 .navBar__container.active {
-    background: rgb(74, 122, 252);
+    background: rgba(0, 0, 0, 0.651);
     height: 250px;
     width: 100%;
 }
@@ -36,16 +36,6 @@
     padding: 0 30px;
     font-size: 20px;
     cursor: pointer;
-}
-
-.navBar__container .toggle::before {
-    
-    margin-right: 20px;
-}
-
-.navBar__container .toggle.active::before {
-    
-    margin-right: 20px;
 }
 
 .navBar__container .toggle.active span::before {
@@ -79,7 +69,7 @@
     content: "";
     position: absolute;
     bottom: 20px;
-    left: 0;
+    left:  0;
     width: 100%;
     height: 2px;
     background: #fff;
@@ -88,7 +78,7 @@
 
 .navBar__container ul {
     position: relative;
-    background: #444;
+    
 }
 
 .navBar__container ul li {
@@ -109,7 +99,7 @@
 
 .navBar__container ul li a:hover {
     transition: 0s;
-    background: rgba(74, 122, 252, 0.767);
+    background: rgba(68, 68, 68, 0.829);
 }
 
 #home {
