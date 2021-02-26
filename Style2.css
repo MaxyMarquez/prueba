@@ -157,6 +157,10 @@
     transition: .5s;
 }
 
+.input__style::placeholder {
+    color: white;
+}
+
 .form-container textarea:focus {
     height: 200px;  
 }
